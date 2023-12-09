@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <script type="module" defer src="./index.js"></script>
+    <title>3D Visiting Card</title>
+    <meta
+      name="description"
+      content="Custom 3D Visiting card render using Three.js"
+    />
+  </head>
+  <body>
+    <img src="./loader.svg" id="loader" alt="Loader icon" />
+    <canvas id="canvas"></canvas>
+    <div class="cardInfoContainer">
+      <div class="content">
+        <h2 class="title">Card Settings</h2>
+        <div class="inputDiv">
+          <label class="label" for="Name">Job Title</label>
+          <input
+            class="inputField"
+            type="text"
+            name="Name"
+            id="name"
+            placeholder="Your Job Title"
+          />
+        </div>
+        <div class="inputDiv">
+          <label class="label" for="title">Name</label>
+          <input
+            class="inputField"
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Your Name"
+          />
+        </div>
+        <div class="inputDiv">
+          <label class="label" for="details">Contact Details</label>
+          <input
+            class="inputField"
+            type="text"
+            name="details"
+            id="details"
+            placeholder="Your Contact Details"
+          />
+        </div>
+        <div class="inputDiv">
+          <label class="label" for="website">Social Media</label>
+          <input
+            class="inputField"
+            class="inputField"
+            type="text"
+            name="social"
+            id="social"
+            placeholder="Enter Your Social Media"
+          />
+        </div>
+        <div class="inputDiv">
+          <label class="label" for="website">Email</label>
+          <input
+            class="inputField"
+            class="inputField"
+            type="text"
+            name="Email"
+            id="Email"
+            placeholder="Enter Your Email"
+          />
+        </div>
+        <div class="inputDiv">
+          <label class="label" for="website">Website</label>
+          <input
+            class="inputField"
+            class="inputField"
+            type="text"
+            name="website"
+            id="website"
+            placeholder="Enter Your Website"
+          />
+        </div>
+        <div class="inputDiv">
+          <label class="label" for="details">Address</label>
+          <input
+            class="inputField"
+            type="text"
+            name="Address"
+            id="Address"
+            placeholder="Your Address Details"
+          />
+        </div>
+        <div class="inputDiv colorDiv">
+          <label class="label name" for="colorPicker">Card color:</label>
+          <input
+            class="colorPicker"
+            type="color"
+            name="color"
+            id="colorPicker"
+            value="#791d10"
+          />
+        </div>
+        <div class="inputDiv colorDiv">
+          <label class="label name" for="textColorPicker">Text color:</label>
+          <input
+            class="colorPicker"
+            type="color"
+            name="textColorPicker"
+            id="textColorPicker"
+            value="#ffffff"
+          />
+        </div>
+        <div class="inputDiv colorDiv">
+          <label class="label name" for="textColorPicker">Rotate Card:</label>
+          <input
+            class="rotateCard"
+            type="checkbox"
+            name="rotateCard"
+            id="rotateCard"
+            checked
+          />
+        </div>
+        <button id="confirm" class="confirmBtn">Close</button>
+      </div>
+    </div>
+    <button class="openModalBtn">Edit Card</button>
+  </body>
+</html>
