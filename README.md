@@ -1,12 +1,7 @@
-# [3D Credit Card](https://lnardon.github.io/3DCreditCard/ "Homepage")
-
-A 3D credit card visualization website.
-
-<p align="center">
-  <img src="./demo.gif">
-</p>
-
-## [Access website here](https://lnardon.github.io/3DCreditCard/ "Homepage")
+3D Visiting Card
+To run this project on your machine
+1. go to index.html file
+2. open with live server to run the project
 
 ### What was used on this project
 
